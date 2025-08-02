@@ -17,7 +17,7 @@ SELECT
     UnitPrice,
     CustomerID,
     LOWER(TRIM(Country)) AS Country
-FROM online_retail__transaction.online_retail_aa
+FROM online_retail_transaction.online_retail_aa
 WHERE 
     Quantity > 0
     AND UnitPrice > 0
@@ -26,18 +26,18 @@ WHERE
 
 /* === QA: online_retail_aa Quality Checks === */
 -- Null or invalid values check by column
-SELECT CustomerID FROM online_retail__transaction.online_retail_aa WHERE CustomerID IS NULL OR CustomerID = 0;
-SELECT StockCode FROM online_retail__transaction.online_retail_aa WHERE StockCode IS NULL OR StockCode = '';
-SELECT Quantity FROM online_retail__transaction.online_retail_aa WHERE Quantity < 0;
-SELECT InvoiceDate FROM online_retail__transaction.online_retail_aa WHERE InvoiceDate = 0 OR InvoiceDate IS NULL;
-SELECT UnitPrice FROM online_retail__transaction.online_retail_aa WHERE UnitPrice < 0;
-SELECT Country FROM online_retail__transaction.online_retail_aa WHERE Country IS NULL OR Country = '';
-SELECT InvoiceNo FROM online_retail__transaction.online_retail_aa WHERE InvoiceNo IS NULL OR InvoiceNo LIKE 'C%';
+SELECT CustomerID FROM online_retail_transaction.online_retail_aa WHERE CustomerID IS NULL OR CustomerID = 0;
+SELECT StockCode FROM online_retail_transaction.online_retail_aa WHERE StockCode IS NULL OR StockCode = '';
+SELECT Quantity FROM online_retail_transaction.online_retail_aa WHERE Quantity < 0;
+SELECT InvoiceDate FROM online_retail_transaction.online_retail_aa WHERE InvoiceDate = 0 OR InvoiceDate IS NULL;
+SELECT UnitPrice FROM online_retail_transaction.online_retail_aa WHERE UnitPrice < 0;
+SELECT Country FROM online_retail_transaction.online_retail_aa WHERE Country IS NULL OR Country = '';
+SELECT InvoiceNo FROM online_retail_transaction.online_retail_aa WHERE InvoiceNo IS NULL OR InvoiceNo LIKE 'C%';
 
 -- Check valid time extraction
-SELECT * FROM online_retail__transaction.online_retail_aa 
+SELECT * FROM online_retail_transaction.online_retail_aa 
 WHERE CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(InvoiceDate, ' ', -1), ':', 1) AS UNSIGNED) < 24;
-SELECT InvoiceDate FROM online_retail__transaction.online_retail_aa WHERE InvoiceDate IS NOT NULL LIMIT 10;
+SELECT InvoiceDate FROM online_retail_transaction.online_retail_aa WHERE InvoiceDate IS NOT NULL LIMIT 10;
 
 /* === Clean: online_retail_ab === */
 SELECT 
@@ -53,7 +53,7 @@ SELECT
     UnitPrice,
     CustomerID,
     LOWER(TRIM(Country)) AS Country
-FROM online_retail__transaction.online_retail_ab
+FROM online_retail_transaction.online_retail_ab
 WHERE 
     Quantity > 0
     AND UnitPrice > 0
@@ -61,18 +61,18 @@ WHERE
     AND CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(InvoiceDate, ' ', -1), ':', 1) AS UNSIGNED) < 24;
 
 /* === QA: online_retail_ab Quality Checks === */
-SELECT CustomerID FROM online_retail__transaction.online_retail_ab WHERE CustomerID IS NULL OR CustomerID = 0;
-SELECT StockCode FROM online_retail__transaction.online_retail_ab WHERE StockCode IS NULL OR StockCode = '';
-SELECT Quantity FROM online_retail__transaction.online_retail_ab WHERE Quantity < 0;
-SELECT InvoiceDate FROM online_retail__transaction.online_retail_ab WHERE InvoiceDate = 0 OR InvoiceDate IS NULL;
-SELECT UnitPrice FROM online_retail__transaction.online_retail_ab WHERE UnitPrice < 0;
-SELECT Country FROM online_retail__transaction.online_retail_ab WHERE Country IS NULL OR Country = '';
-SELECT InvoiceNo FROM online_retail__transaction.online_retail_ab WHERE InvoiceNo IS NULL OR InvoiceNo LIKE 'C%';
+SELECT CustomerID FROM online_retail_transaction.online_retail_ab WHERE CustomerID IS NULL OR CustomerID = 0;
+SELECT StockCode FROM online_retail_transaction.online_retail_ab WHERE StockCode IS NULL OR StockCode = '';
+SELECT Quantity FROM online_retail_transaction.online_retail_ab WHERE Quantity < 0;
+SELECT InvoiceDate FROM online_retail_transaction.online_retail_ab WHERE InvoiceDate = 0 OR InvoiceDate IS NULL;
+SELECT UnitPrice FROM online_retail_transaction.online_retail_ab WHERE UnitPrice < 0;
+SELECT Country FROM online_retail_transaction.online_retail_ab WHERE Country IS NULL OR Country = '';
+SELECT InvoiceNo FROM online_retail_transaction.online_retail_ab WHERE InvoiceNo IS NULL OR InvoiceNo LIKE 'C%';
 
 -- Time sanity check
-SELECT * FROM online_retail__transaction.online_retail_ab 
+SELECT * FROM online_retail_transaction.online_retail_ab 
 WHERE CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(InvoiceDate, ' ', -1), ':', 1) AS UNSIGNED) < 24;
-SELECT InvoiceDate FROM online_retail__transaction.online_retail_ab WHERE InvoiceDate IS NOT NULL LIMIT 10;
+SELECT InvoiceDate FROM online_retail_transaction.online_retail_ab WHERE InvoiceDate IS NOT NULL LIMIT 10;
 
 /* === Clean: online_retail_ba === */
 SELECT 
@@ -92,7 +92,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS Country
-FROM online_retail__transaction.online_retail_ba
+FROM online_retail_transaction.online_retail_ba
 WHERE 
     Quantity > 0
     AND UnitPrice > 0
@@ -117,7 +117,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS Country
-FROM online_retail__transaction.online_retail_bb
+FROM online_retail_transaction.online_retail_bb
 WHERE 
     Quantity > 0
     AND UnitPrice > 0
