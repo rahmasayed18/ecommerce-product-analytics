@@ -5,7 +5,7 @@
 
 /* === Clean: online_retail_aa === */
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode,
     LOWER(TRIM(Description)) AS Description,
     Quantity,
@@ -41,7 +41,7 @@ SELECT InvoiceDate FROM online_retail_transaction.online_retail_aa WHERE Invoice
 
 /* === Clean: online_retail_ab === */
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode,
     LOWER(TRIM(Description)) AS Description,
     Quantity,
@@ -76,7 +76,7 @@ SELECT InvoiceDate FROM online_retail_transaction.online_retail_ab WHERE Invoice
 
 /* === Clean: online_retail_ba === */
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode,
     LOWER(TRIM(Description)) AS Description,
     Quantity,
@@ -101,7 +101,7 @@ WHERE
 
 /* === Clean: online_retail_bb === */
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode,
     LOWER(TRIM(Description)) AS Description,
     Quantity,
