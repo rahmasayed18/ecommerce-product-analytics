@@ -6,15 +6,15 @@
 ==================================================
 */
 
-DROP TABLE IF EXISTS online_retail__transaction.online_retail_cleaned;
+DROP TABLE IF EXISTS online_retail_transaction.online_retail_cleaned;
 
-CREATE TABLE online_retail__transaction.online_retail_cleaned AS
+CREATE TABLE online_retail_transaction.online_retail_cleaned AS
 
 -- ============================
 -- Cleaned Data from table: AA
 -- ============================
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode AS stock_code,
     LOWER(TRIM(Description)) AS description,
     Quantity AS quantity,
@@ -30,7 +30,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS country
-FROM online_retail__transaction.online_retail_aa
+FROM online_retail_transaction.online_retail_aa
 WHERE Quantity > 0
   AND UnitPrice > 0
   AND CustomerId != 0 
@@ -42,7 +42,7 @@ UNION ALL
 -- Cleaned Data from table: AB
 -- ============================
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode AS stock_code,
     LOWER(TRIM(Description)) AS description,
     Quantity AS quantity,
@@ -58,7 +58,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS country
-FROM online_retail__transaction.online_retail_ab
+FROM online_retail_transaction.online_retail_ab
 WHERE Quantity > 0
   AND UnitPrice > 0
   AND CustomerId != 0 
@@ -70,7 +70,7 @@ UNION ALL
 -- Cleaned Data from table: BA
 -- ============================
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode AS stock_code,
     LOWER(TRIM(Description)) AS description,
     Quantity AS quantity,
@@ -86,7 +86,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS country
-FROM online_retail__transaction.online_retail_ba
+FROM online_retail_transaction.online_retail_ba
 WHERE Quantity > 0
   AND UnitPrice > 0
   AND CustomerId != 0 
@@ -98,7 +98,7 @@ UNION ALL
 -- Cleaned Data from table: BB
 -- ============================
 SELECT 
-    ï»¿InvoiceNo AS invoice_no,
+    InvoiceNo AS invoice_no,
     StockCode AS stock_code,
     LOWER(TRIM(Description)) AS description,
     Quantity AS quantity,
@@ -114,7 +114,7 @@ SELECT
         WHEN LOWER(TRIM(Country)) = 'rsa' THEN 'south africa'
         ELSE LOWER(TRIM(Country))
     END AS country
-FROM online_retail__transaction.online_retail_bb
+FROM online_retail_transaction.online_retail_bb
 WHERE Quantity > 0
   AND UnitPrice > 0
   AND CustomerId != 0 
