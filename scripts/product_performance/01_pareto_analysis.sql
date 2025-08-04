@@ -1,6 +1,5 @@
 /*-----------------------------------------
      Product Sales Pareto Analysis
-     (To be updated later)
 ------------------------------------------------*/
 drop view if exists online_retail_transaction.vw_pareto_analysis;
 create view online_retail_transaction.vw_pareto_analysis as
