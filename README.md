@@ -1,123 +1,107 @@
-# E-commerce Analytics Case Study (SQL Project)
+# 🛒 E-Commerce Product Analytics SQL Project
 
-📊 Project Overview
-
-This project analyzes transactional e-commerce data from a UK-based online retailer. The primary goal was to uncover purchasing patterns, product performance, and customer behavior using advanced SQL analysis. The project draws insights that can drive strategic decisions around product stocking, customer retention, and revenue growth.
-
-The dataset includes detailed invoices with product descriptions, quantities, unit prices, customer IDs, and timestamps across multiple countries.
+**Project:** End-to-End SQL Product Analytics on Online Retail Dataset
 
 ---
 
-📌 Objectives
+## 📌 Project Overview
 
--Identify top-performing products using Pareto (80/20) analysis
+This SQL project explores product performance in an e-commerce setting. It includes metrics such as:
 
--Segment tail products with volatile sales patterns
-
--Track consistency of top sellers over time (monthly trends)
-
--Analyze pricing stability and product value segments
-
--Generate customer segmentation reports
-
--Build detailed product performance analytics
+- Top vs. tail product sales
+- Pareto analysis
+- Volatility in pricing
+- Consistency in product performance
+- Root cause analysis
+- Segmentation by stability, returns, and contribution
 
 ---
 
-🔍 Key Business Questions
+🎯 Objectives
+Analyze product sales concentration using Pareto analysis
 
-Which products contribute to 80% of total revenue?
+Detect price volatility and stability
 
-Are those top products consistent across months?
+Classify product lifecycle patterns
 
-Which tail products have unstable or spiky revenue?
+Identify long-tail products and assess their value
 
-How stable are product prices over time?
-
-What are the characteristics of loyal or churned customers?
-
-Which products are at risk of churn (inactive for months)?
+Provide insights for merchandising and pricing strategies
 
 ---
 
-🧠 Key Insights
+## 🧠 Key Business Questions
 
-- 54% of products contribute to 80% of total revenue
-
-- 641 products in the tail segment show high volatility
-
-- Some products appear in top 80% of revenue across 10+ months — true MVPs
-
-- Stable-price products make up the majority of top performers
-
-- 40%+ of customers have a high risk of churn due to inactivity
-
-- High value products (>$1000 revenue) are only ~12% but drive a big portion of revenue
+- Who are the top-performing products?
+- Are low-selling products worth keeping (long tail analysis)?
+- Are the top 20% consistent over time?
+- What drives top performer success — price? seasonality?
+- Are returns concentrated in specific products?
 
 ---
 
-🏗️ Project Structure
-
-online-retail-analytics/
-├── data/                           # Cleaned dataset (optional)
-├── sql/                            # All SQL queries and views
-│   ├── pareto_analysis.sql
-│   ├── tail_analysis.sql
-│   ├── volatility_analysis.sql
-│   ├── monthly_ranked_sales.sql
-│   ├── customer_summary_report.sql
-│   ├── product_performance_report.sql
-│   └── root_cause_analysis.sql
-├── reports/                        # Output tables 
-├── README.md                       # Project overview (this file)
-└── LICENSE                         # MIT License for this project
+## 📂 Project Structure
+│
+├── 01_data_cleaning.sql
+├── 02_pareto_analysis.sql
+├── 03_long_tail_analysis.sql
+├── 04_price_volatility_analysis.sql
+├── 05_root_cause_analysis.sql
+├── README.md
+└── .gitignore
 
 ---
 
-📈 Reports & Views
+✅ What I Did
+Cleaned and prepared raw e-commerce transaction data.
 
-pareto_analysis.sql: Identify top 20% of products generating 80% of sales
+Built modular SQL views for product-level and monthly sales aggregation.
 
-tail_analysis.sql: Analyze tail-end products and their volatility
+Conducted Pareto analysis to identify top 20% revenue-generating products.
 
-monthly_ranked_sales.sql: Track monthly top-selling products and consistency
+Segmented products into long-tail vs. top sellers.
 
-root_cause_analysis.sql: Identify factors behind top product performance (price/seasonality)
+Analyzed price volatility using Relative Standard Deviation (RSD).
 
-customer_summary_report.sql: Customer segmentation by activity, spend, and churn
+Built a product consistency report to track recurring top performers over time.
 
-product_performance_report.sql: Deep-dive product metrics including recency, order value, churn risk, and pricing tiers
+Identified performance tiers based on historical sales presence.
 
----
+Investigated seasonality, SKU stability, and product lifespan trends.
 
-📊 Metrics Glossary
-
-Cumulative Sales %: Running total % of sales when ranked by product
-
-Volatile Products: High standard deviation in monthly sales
-
-Churned Users: Customers with only one transaction period
-
-Product Movement Type: Fast vs. slow based on quantity sold
-
-Return Rate %: % of returned items relative to total sold
+Documented metrics, logic, and insights for reproducibility and transparency.
 
 ---
 
-🔧 Tools & Technologies
+📊 Key Insights
+Top 55% of products generate ~80% of total revenue — the distribution is skewed, but not a classic 80/20 Pareto.
 
-SQL (MySQL)
+45% of the catalog contributes very little revenue, forming a long tail of underperforming or niche products.
 
-Git & GitHub
+Only a small fraction of products consistently stay top performers over time, suggesting high product turnover or changing customer preferences.
 
-Data Modeling (CTEs, views)
+Price volatility is often linked to inconsistent performance, making it a potential red flag for product stability.
+
+Several one-time bestsellers fail to sustain demand, indicating short lifecycles or seasonal popularity.
+
+Product lifespans vary, with some maintaining sales over many months while others spike and vanish quickly.
+
+Top-performing products typically show stable pricing, early catalog entry, and frequent monthly sales presence.
 
 ---
 
-🙌 Acknowledgment
+## 🔧 Tech Stack
 
-Dataset: UCI Online Retail Dataset
+- **SQL (MySQL)**
+- **Git + GitHub**
+- Clean, modular SQL queries
+- Professional project structuring
 
-Cleaned & transformed in SQL by Rahma
 
-Open to commercial and personal use under UCI license
+---
+
+## 📎 Notes
+
+- Dataset: Online Retail (public UCI dataset)
+
+---
