@@ -17,7 +17,8 @@ This SQL project explores product performance in an e-commerce setting. It inclu
 
 ---
 
-🎯 Objectives
+## 🎯 Objectives
+
 Analyze product sales concentration using Pareto analysis
 
 Detect price volatility and stability
@@ -52,7 +53,8 @@ Provide insights for merchandising and pricing strategies
 
 ---
 
-✅ What I Did
+## ✅ What I Did
+
 Cleaned and prepared raw e-commerce transaction data.
 
 Built modular SQL views for product-level and monthly sales aggregation.
@@ -73,7 +75,8 @@ Documented metrics, logic, and insights for reproducibility and transparency.
 
 ---
 
-📊 Key Insights
+## 📊 Key Insights
+
 Top 55% of products generate ~80% of total revenue — the distribution is skewed, but not a classic 80/20 Pareto.
 
 45% of the catalog contributes very little revenue, forming a long tail of underperforming or niche products.
