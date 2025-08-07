@@ -6,7 +6,7 @@ create view online_retail_transaction.vw_pareto_analysis as
 with sales_data as
 (
     select
-        distinct(description) product,
+        DISTINCT LOWER(TRIM(description)),
         count(quantity) as total_quantity,
         round(sum(unit_price * quantity), 2) as total_sales
     from
