@@ -66,7 +66,7 @@ ORDER BY total_sales DESC;
 
 WITH total_products_number AS (
     SELECT COUNT(DISTINCT description) AS total_products
-    FROM online_retail__transaction.online_retail_cleaned
+    FROM online_retail_transaction.online_retail_cleaned
 ),
 tail_products_number AS (
     SELECT COUNT(DISTINCT product) AS tail_count
