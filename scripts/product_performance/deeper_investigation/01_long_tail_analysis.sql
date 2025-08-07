@@ -144,5 +144,33 @@ WHERE product_stability = 'consistent_low_revenue'
 ORDER BY total_revenue DESC;
 
 
+-- This query analyzes the price stability of tail products by calculating
+
+
+WITH price_analysis AS (
+    SELECT
+        description AS product,
+        ROUND(AVG(unit_price), 2) AS avg_price,
+        ROUND(STD(unit_price), 2) AS price_std_dev,
+        ROUND(STD(unit_price) / AVG(unit_price), 2) AS relative_std_dev,
+        CASE 
+            WHEN ROUND(STD(unit_price) / AVG(unit_price), 2) < 0.1 THEN 'Stable Price'
+            WHEN ROUND(STD(unit_price) / AVG(unit_price), 2) BETWEEN 0.1 AND 0.3 THEN 'Moderately Stable Price'
+            ELSE 'Volatile Price'
+        END AS price_stability
+    FROM online_retail__transaction.online_retail_cleaned
+    WHERE description IN (
+        SELECT DISTINCT product
+        FROM online_retail__transaction.vw_tail_products
+    )
+    GROUP BY description
+)
+
+SELECT 
+    price_stability,
+    COUNT(DISTINCT product) AS total_products
+FROM price_analysis
+GROUP BY price_stability
+ORDER BY total_products DESC;
 
 
