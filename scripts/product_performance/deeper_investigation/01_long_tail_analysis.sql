@@ -62,6 +62,26 @@ FROM ranked_sales
 WHERE CAST(REPLACE(cumulative_percentage, ' %', '') AS DECIMAL) BETWEEN 80 AND 100
 ORDER BY total_sales DESC;
 
+--checking the count of the tail products
+
+WITH total_products_number AS (
+    SELECT COUNT(DISTINCT description) AS total_products
+    FROM online_retail__transaction.online_retail_cleaned
+),
+tail_products_number AS (
+    SELECT COUNT(DISTINCT product) AS tail_count
+    FROM tail_products
+)
+
+SELECT
+    t.tail_count,
+    tp.total_products,
+    CONCAT(ROUND(t.tail_count * 100.0 / tp.total_products, 2), ' %') AS tail_percent
+FROM 
+    tail_products_number t
+JOIN 
+    total_products_number tp ON 1=1;
+
 /*--------------------------------------------------------------------------------
 -- Sub-Segmenting Long Tail Products: Frequency and Stability Patterns
 --------------------------------------------------------------------------------*/
@@ -122,4 +142,7 @@ SELECT *
 FROM consistent_low_revenue_products
 WHERE product_stability = 'consistent_low_revenue'
 ORDER BY total_revenue DESC;
+
+
+
 
