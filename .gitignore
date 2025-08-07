@@ -1,0 +1,37 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Python virtual environments
+env/
+venv/
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.zip
+*.json
+
+# Logs
+*.log
+
+# Mac OS metadata
+._*
+
+# Temporary files
+*.tmp
+*.bak
+
+# Secrets / config (just in case)
+*.env
+config.yml
+secrets.yml
