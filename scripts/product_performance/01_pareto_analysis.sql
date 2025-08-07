@@ -1,37 +1,31 @@
 /*-----------------------------------------
      Product Sales Pareto Analysis
 ------------------------------------------------*/
-drop view if exists online_retail_transaction.vw_pareto_analysis;
-create view online_retail_transaction.vw_pareto_analysis as
-with sales_data as
-(
-    select
-        DISTINCT LOWER(TRIM(description)),
-        count(quantity) as total_quantity,
-        round(sum(unit_price * quantity), 2) as total_sales
-    from
-        online_retail_transaction.online_retail_cleaned
-    group by customer_id, description
-), grand_total as
-(
-    select
-        sum(total_sales) as grand_total_sales
-    from sales_data
-), ranked_sales as
-(
-    select 
+DROP VIEW IF EXISTS online_retail__transaction.vw_tail_products;
+CREATE VIEW online_retail__transaction.vw_tail_products AS
+WITH sales_data AS (
+    SELECT
+        description AS product,
+        SUM(quantity) AS total_quantity,
+        ROUND(SUM(unit_price * quantity), 2) AS total_sales
+    FROM online_retail__transaction.online_retail_cleaned
+    GROUP BY description
+),
+grand_total AS (
+    SELECT SUM(total_sales) AS grand_total_sales FROM sales_data
+),
+ranked_sales AS (
+    SELECT 
         product,
         total_quantity,
         total_sales,
-        concat(round(total_sales * 100.0 / (select grand_total_sales from grand_total), 2), ' %') as sales_percentage,
-        round(sum(total_sales) over (order by total_sales desc), 2) as cumulative_sales,
-        concat(round(sum(total_sales) over (order by total_sales desc) * 100.0 / 
-        (select grand_total_sales from grand_total), 2), ' %') as cumulative_percentage  
-    from sales_data
-    order by total_sales desc
+        ROUND(total_sales * 100.0 / (SELECT grand_total_sales FROM grand_total), 2) AS sales_percentage,
+        ROUND(SUM(total_sales) OVER (ORDER BY total_sales DESC), 2) AS cumulative_sales,
+        ROUND(SUM(total_sales) OVER (ORDER BY total_sales DESC) * 100.0 / 
+              (SELECT grand_total_sales FROM grand_total), 2) AS cumulative_percentage
+    FROM sales_data
 )
 
-select *
-from ranked_sales
-where cumulative_percentage <= 80
-order by total_sales desc;
+SELECT *
+FROM ranked_sales
+WHERE cumulative_percentage > 80;
