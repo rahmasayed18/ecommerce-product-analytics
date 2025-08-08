@@ -42,7 +42,7 @@ Provide insights for merchandising and pricing strategies
 ---
 
 ## 📂 Project Structure
-
+```
 │
 ├── 01_data_cleaning.sql
 ├── 02_pareto_analysis.sql
@@ -51,6 +51,7 @@ Provide insights for merchandising and pricing strategies
 ├── 05_root_cause_analysis.sql
 ├── README.md
 └── .gitignore
+```
 
 ---
 
