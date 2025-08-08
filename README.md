@@ -42,6 +42,7 @@ Provide insights for merchandising and pricing strategies
 ---
 
 ## 📂 Project Structure
+
 │
 ├── 01_data_cleaning.sql
 ├── 02_pareto_analysis.sql
