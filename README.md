@@ -24,8 +24,8 @@ The UK’s **Average Order Value (AOV)** remains very stable, meaning revenue fl
 
 Finally, there is clear **seasonality**, with strong peaks in **November, December, and January**, highlighting the impact of holiday-driven demand.  
 
-![<img width="1482" height="767" alt="image" src="https://github.com/user-attachments/assets/3913a3a5-672a-4e78-b3e9-c625b34f394b" />
-](link-to-visuals)
+![Executive Summary Visuals Placeholder](<img width="1482" height="767" alt="image" src="https://github.com/user-attachments/assets/c8934912-9407-451f-b6ec-5025332acd62" />
+)
 
 ---
 
