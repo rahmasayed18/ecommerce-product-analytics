@@ -24,7 +24,7 @@ The UK’s **Average Order Value (AOV)** remains very stable, meaning revenue fl
 
 Finally, there is clear **seasonality**, with strong peaks in **November, December, and January**, highlighting the impact of holiday-driven demand.  
 
-![Executive Summary Visuals Placeholder](link-to-visuals)
+
 <img width="1482" height="767" alt="Screenshot 2025-09-14 232155" src="https://github.com/user-attachments/assets/fcd9d653-fdee-4691-8774-6ef11895e4ac" />
 
 ---
@@ -37,7 +37,8 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 - From **August onward**, revenue began to rise gradually, eventually crossing **£1M by December**.  
 - Revenue patterns confirm that growth is **volume-driven, not value-driven**, since AOV stayed consistent throughout.  
 
-![Revenue & Order Trends Visual](link-to-visual)
+<img width="1344" height="402" alt="Screenshot 2025-09-14 232720" src="https://github.com/user-attachments/assets/6216ef2c-35a2-48e8-9748-ab9c80ea7bc1" />
+
 
 ---
 
@@ -46,24 +47,25 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 - Despite this, the remaining ~**£4M comes from 36 other countries**, each small on its own but together forming a **stable backbone of the business**.  
 - This dual structure (one dominant market + many stable minor contributors) shows both **strength and risk**: heavy reliance on the UK, but also hidden resilience from broad geographic spread.  
 
-![Country Performance Visual](link-to-visual)
+<img width="1483" height="346" alt="Screenshot 2025-09-14 232625" src="https://github.com/user-attachments/assets/43e2fea5-3d80-424e-b2f6-a8d573cbf521" />
 
 ---
 
 ## Customer Purchasing Behavior  
 - **80% of revenue** is spread across ~**50% of the product catalog**, meaning there’s no single “hero product.”  
 - The highest purchased product was **Paper Craft Little Birdie**, which generated ~**£170K in December alone**, but was sold only once. This suggests issues like **one-off bulk purchases or missed retention opportunities**.  
-- **AOV remained stable** across time and markets, showing consistent customer spending patterns. Growth opportunities therefore lie in **increasing purchase frequency rather than pricing adjustments**.  
+- **AOV remained stable** across time and markets, showing consistent customer spending patterns. Growth opportunities, therefore lie in **increasing purchase frequency rather than pricing adjustments**.  
 
-![Customer Purchasing Behavior Visual](link-to-visual)
+
+
 
 ---
 
 # Recommendations  
-1. **Prioritize top six countries.** These drive the majority of sales and should be the focus for tailored campaigns and strategies.  
+1. **Prioritize the top six countries.** These drive the majority of sales and should be the focus for tailored campaigns and strategies.  
 2. **Boost UK order volume.** Since AOV is stable, growth depends on increasing the number of transactions. Tactics like loyalty programs, targeted promotions, or bundling could help.  
-3. **Investigate one-time product sales.** Products like *Paper Craft Little Birdie* that generate huge revenue but are only sold once represent missed opportunities. Ensuring availability, promoting repeat buys, and addressing supply issues could unlock more growth.  
-4. **Leverage seasonality.** Strengthen promotional activity in November–January to maximize natural demand spikes during the holiday season.  
+3. **Investigate one-time product sales.**Products like *Paper Craft Little Birdie*, which generate huge revenue but are only sold once, represent missed opportunities. ** Ensuring availability, promoting repeat buys, and addressing supply issues could unlock more growth.  
+4. **Leverage seasonality.**Strengthen promotional activity in November–January to capitalize on natural demand spikes during the holiday season. **  
 5. **Balance dependence on the UK.** While the UK is the main driver, diversifying growth across other stable countries can reduce vulnerability and ensure longer-term resilience.  
 
 ---
