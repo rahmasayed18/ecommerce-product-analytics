@@ -1,112 +1,69 @@
-# 🛒 E-Commerce Product Analytics SQL Project
+# Project Background  
+This project analyzes the Online Retail dataset with a focus on **monthly revenue growth** and identifying the key drivers behind sales fluctuations. The dataset covers all of 2011, with transactions across 37 countries. The main objective is to understand revenue trends, country performance, product dynamics, and purchasing behavior to inform business decisions and growth strategies.  
 
-**Project:** End-to-End SQL Product Analytics on Online Retail Dataset
-
----
-
-## 📌 Project Overview
-
-This SQL project explores product performance in an e-commerce setting. It includes metrics such as:
-
-- Top vs. tail product sales
-- Pareto analysis
-- Volatility in pricing
-- Consistency in product performance
-- Root cause analysis
-- Segmentation by stability, returns, and contribution
+The analysis followed a structured process: cleaning and preparing the dataset, building a technical understanding of its structure, analyzing monthly growth patterns, and presenting insights in a business-oriented format.  
 
 ---
 
-## 🎯 Objectives
-
-Analyze product sales concentration using Pareto analysis
-
-Detect price volatility and stability
-
-Classify product lifecycle patterns
-
-Identify long-tail products and assess their value
-
-Provide insights for merchandising and pricing strategies
+# Data Structure & Initial Checks  
+- The dataset is organized at the transaction level, including **InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, and Country**.  
+- Initial cleaning involved handling missing values, canceled orders, and duplicate entries.  
+- After preparation, data were aggregated into **monthly revenue, order volume, and customer activity** to enable growth and trend analysis.  
+- Exploratory checks confirmed that the data spans **2011**, with transactions distributed across **37 countries**.  
 
 ---
 
-## 🧠 Key Business Questions
+# Executive Summary  
+The company’s performance is mainly driven by its **top six countries**, which dominate overall results. Smaller markets contribute minimal growth and show flat patterns, making them less relevant for near-term performance.  
 
-- Who are the top-performing products?
-- Are low-selling products worth keeping (long tail analysis)?
-- Are the top 20% consistent over time?
-- What drives top performer success — price? seasonality?
-- Are returns concentrated in specific products?
+From a product perspective, there is no single breakout product. Instead, about **80% of revenue comes from nearly 50% of the product portfolio**, reflecting broad adoption but no clear hero items. Interestingly, some high-performing products are sold only once, which raises concerns about missed opportunities for repeat purchases.  
 
----
+The **UK is the dominant market**, generating roughly **£4.5M out of £8.5M total revenue**. While the UK is crucial, the remaining ~£4M is spread across **36 other countries**, which, though smaller individually, collectively provide stable contributions.  
 
-## 📂 Project Structure
-```
-│
-├── 01_data_cleaning.sql
-├── 02_pareto_analysis.sql
-├── 03_long_tail_analysis.sql
-├── 04_price_volatility_analysis.sql
-├── 05_root_cause_analysis.sql
-├── README.md
-└── .gitignore
-```
+The UK’s **Average Order Value (AOV)** remains very stable, meaning revenue fluctuations are almost entirely due to **changes in order volume**, not pricing. This makes driving more orders the key to UK growth.  
+
+Finally, there is clear **seasonality**, with strong peaks in **November, December, and January**, highlighting the impact of holiday-driven demand.  
+
+![<img width="1482" height="767" alt="image" src="https://github.com/user-attachments/assets/3913a3a5-672a-4e78-b3e9-c625b34f394b" />
+](link-to-visuals)
 
 ---
 
-## ✅ What I Did
+# Insights Deep Dive  
 
-Cleaned and prepared raw e-commerce transaction data.
+## Revenue & Order Trends  
+- December revenue reached ~**£700K from 2,178 orders**, the highest point of the year.  
+- Between **February and July**, sales were stable, fluctuating between **£400K and £600K**.  
+- From **August onward**, revenue began to rise gradually, eventually crossing **£1M by December**.  
+- Revenue patterns confirm that growth is **volume-driven, not value-driven**, since AOV stayed consistent throughout.  
 
-Built modular SQL views for product-level and monthly sales aggregation.
-
-Conducted Pareto analysis to identify top 20% revenue-generating products.
-
-Segmented products into long-tail vs. top sellers.
-
-Analyzed price volatility using Relative Standard Deviation (RSD).
-
-Built a product consistency report to track recurring top performers over time.
-
-Identified performance tiers based on historical sales presence.
-
-Investigated seasonality, SKU stability, and product lifespan trends.
-
-Documented metrics, logic, and insights for reproducibility and transparency.
+![Revenue & Order Trends Visual](link-to-visual)
 
 ---
 
-## 📊 Key Insights
+## Country Performance  
+- The **UK dominates with ~£4.5M**, accounting for more than half of total sales.  
+- Despite this, the remaining ~**£4M comes from 36 other countries**, each small on its own but together forming a **stable backbone of the business**.  
+- This dual structure (one dominant market + many stable minor contributors) shows both **strength and risk**: heavy reliance on the UK, but also hidden resilience from broad geographic spread.  
 
-Top 55% of products generate ~80% of total revenue — the distribution is skewed, but not a classic 80/20 Pareto.
-
-45% of the catalog contributes very little revenue, forming a long tail of underperforming or niche products.
-
-Only a small fraction of products consistently stay top performers over time, suggesting high product turnover or changing customer preferences.
-
-Price volatility is often linked to inconsistent performance, making it a potential red flag for product stability.
-
-Several one-time bestsellers fail to sustain demand, indicating short lifecycles or seasonal popularity.
-
-Product lifespans vary, with some maintaining sales over many months while others spike and vanish quickly.
-
-Top-performing products typically show stable pricing, early catalog entry, and frequent monthly sales presence.
+![Country Performance Visual](link-to-visual)
 
 ---
 
-## 🔧 Tech Stack
+## Customer Purchasing Behavior  
+- **80% of revenue** is spread across ~**50% of the product catalog**, meaning there’s no single “hero product.”  
+- The highest purchased product was **Paper Craft Little Birdie**, which generated ~**£170K in December alone**, but was sold only once. This suggests issues like **one-off bulk purchases or missed retention opportunities**.  
+- **AOV remained stable** across time and markets, showing consistent customer spending patterns. Growth opportunities therefore lie in **increasing purchase frequency rather than pricing adjustments**.  
 
-- **SQL (MySQL)**
-- **Git + GitHub**
-- Clean, modular SQL queries
-- Professional project structuring
-
+![Customer Purchasing Behavior Visual](link-to-visual)
 
 ---
 
-## 📎 Notes
-
-- Dataset: Online Retail (public UCI dataset)
+# Recommendations  
+1. **Prioritize top six countries.** These drive the majority of sales and should be the focus for tailored campaigns and strategies.  
+2. **Boost UK order volume.** Since AOV is stable, growth depends on increasing the number of transactions. Tactics like loyalty programs, targeted promotions, or bundling could help.  
+3. **Investigate one-time product sales.** Products like *Paper Craft Little Birdie* that generate huge revenue but are only sold once represent missed opportunities. Ensuring availability, promoting repeat buys, and addressing supply issues could unlock more growth.  
+4. **Leverage seasonality.** Strengthen promotional activity in November–January to maximize natural demand spikes during the holiday season.  
+5. **Balance dependence on the UK.** While the UK is the main driver, diversifying growth across other stable countries can reduce vulnerability and ensure longer-term resilience.  
 
 ---
