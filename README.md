@@ -25,7 +25,8 @@ The UK’s **Average Order Value (AOV)** remains very stable, meaning revenue fl
 Finally, there is clear **seasonality**, with strong peaks in **November, December, and January**, highlighting the impact of holiday-driven demand.  
 
 
-<img width="1482" height="767" alt="Screenshot 2025-09-14 232155" src="https://github.com/user-attachments/assets/fcd9d653-fdee-4691-8774-6ef11895e4ac" />
+
+<img width="1495" height="820" alt="Screenshot 2025-10-12 210108" src="https://github.com/user-attachments/assets/69a27c36-116c-41d3-8d1d-599ed2e603b2" />
 
 ---
 
@@ -37,7 +38,8 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 - From **August onward**, revenue began to rise gradually, eventually crossing **£1M by December**.  
 - Revenue patterns confirm that growth is **volume-driven, not value-driven**, since AOV stayed consistent throughout.  
 
-<img width="1344" height="402" alt="Screenshot 2025-09-14 232720" src="https://github.com/user-attachments/assets/6216ef2c-35a2-48e8-9748-ab9c80ea7bc1" />
+
+<img width="1354" height="406" alt="Screenshot 2025-10-12 211853" src="https://github.com/user-attachments/assets/461f8cce-a385-438f-9ec9-31a2d64ece64" />
 
 
 ---
@@ -47,7 +49,8 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 - Despite this, the remaining ~**£4M comes from 36 other countries**, each small on its own but together forming a **stable backbone of the business**.  
 - This dual structure (one dominant market + many stable minor contributors) shows both **strength and risk**: heavy reliance on the UK, but also hidden resilience from broad geographic spread.  
 
-<img width="1483" height="346" alt="Screenshot 2025-09-14 232625" src="https://github.com/user-attachments/assets/43e2fea5-3d80-424e-b2f6-a8d573cbf521" />
+<img width="1494" height="343" alt="Screenshot 2025-10-12 210220" src="https://github.com/user-attachments/assets/acdebbfb-ffd3-408f-b589-d9182c91ea34" />
+
 
 ---
 
