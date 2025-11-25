@@ -1,10 +1,10 @@
-# 🛒 E-Commerce Product Analytics SQL Project
+#  E-Commerce Product Analytics SQL Project
 
 **Project:** End-to-End SQL Product Analytics on Online Retail Dataset
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This SQL project explores product performance in an e-commerce setting. It includes metrics such as:
 
@@ -17,7 +17,7 @@ This SQL project explores product performance in an e-commerce setting. It inclu
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 Analyze product sales concentration using Pareto analysis
 
@@ -31,7 +31,7 @@ Provide insights for merchandising and pricing strategies
 
 ---
 
-## 🧠 Key Business Questions
+##  Key Business Questions
 
 - Who are the top-performing products?
 - Are low-selling products worth keeping (long tail analysis)?
@@ -41,7 +41,7 @@ Provide insights for merchandising and pricing strategies
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 │
 ├── 01_data_cleaning.sql
@@ -55,7 +55,7 @@ Provide insights for merchandising and pricing strategies
 
 ---
 
-## ✅ What I Did
+##  What I Did
 
 Cleaned and prepared raw e-commerce transaction data.
 
@@ -77,7 +77,7 @@ Documented metrics, logic, and insights for reproducibility and transparency.
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
 Top 55% of products generate ~80% of total revenue — the distribution is skewed, but not a classic 80/20 Pareto.
 
@@ -95,7 +95,7 @@ Top-performing products typically show stable pricing, early catalog entry, and 
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **SQL (MySQL)**
 - **Git + GitHub**
@@ -105,7 +105,7 @@ Top-performing products typically show stable pricing, early catalog entry, and 
 
 ---
 
-## 📎 Notes
+##  Notes
 
 - Dataset: Online Retail (public UCI dataset)
 
