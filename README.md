@@ -57,7 +57,7 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 
 ## Customer Purchasing Behavior  
 - **80% of revenue** is spread across ~**50% of the product catalog**, meaning there’s no single “hero product.”  
-- The highest purchased product was **Paper Craft Little Birdie**, which generated ~**£170K in December alone**, but was sold only once. This suggests issues like **one-off bulk purchases or missed retention opportunities**.  
+- The highest purchased product was **Paper Craft Little Birdie**, which generated ~**£170K in December alone**, but was sold only once. This suggests issues like **one-off bulk purchases or missed retention opportunities.**
 - **AOV remained stable** across time and markets, showing consistent customer spending patterns. Growth opportunities, therefore lie in **increasing purchase frequency rather than pricing adjustments**.  
 
 
@@ -68,8 +68,8 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 # Recommendations  
 1. **Prioritize the top six countries.** These drive the majority of sales and should be the focus for tailored campaigns and strategies.  
 2. **Boost UK order volume.** Since AOV is stable, growth depends on increasing the number of transactions. Tactics like loyalty programs, targeted promotions, or bundling could help.  
-3. **Investigate one-time product sales.**Products like *Paper Craft Little Birdie*, which generate huge revenue but are only sold once, represent missed opportunities. ** Ensuring availability, promoting repeat buys, and addressing supply issues could unlock more growth.  
-4. **Leverage seasonality.**Strengthen promotional activity in November–January to capitalize on natural demand spikes during the holiday season. **  
+3. **Investigate one-time product sales.** Products like *Paper Craft Little Birdie*, which generate huge revenue but are only sold once, represent missed opportunities. ** Ensuring availability, promoting repeat buys, and addressing supply issues could unlock more growth.  
+4. **Leverage seasonality.** Strengthen promotional activity in November–January to capitalize on natural demand spikes during the holiday season. **  
 5. **Balance dependence on the UK.** While the UK is the main driver, diversifying growth across other stable countries can reduce vulnerability and ensure longer-term resilience.  
 
 ---
