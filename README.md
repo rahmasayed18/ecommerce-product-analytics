@@ -26,7 +26,8 @@ Finally, there is clear **seasonality**, with strong peaks in **November, Decemb
 
 
 
-<img width="1354" height="759" alt="Screenshot 2025-12-29 225312" src="https://github.com/user-attachments/assets/025df33d-bac7-4453-a9c2-42ea9164f03b" />
+
+<img width="1483" height="831" alt="Screenshot 2025-12-30 194524" src="https://github.com/user-attachments/assets/ad075d08-93c8-4899-9bb8-ca236ec21d72" />
 
 
 
